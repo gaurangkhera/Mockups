@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar-left">
+            <img src="logo.png" alt="Your Logo"> <!-- Add the logo here -->
+            <a href="#">Lorem</a>
+        </div>
+        <div class="navbar-right">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Community</a>
+            <a href="#">Profile</a>
+            <a href="#">Log In</a>
+        </div>
+    </nav>
+    <h1>Profile</h1>
+    <div class="container">
+        <div class="post-card smaller-card">
+            <div class="post-pfp left-pfp"></div> <!-- Add a class for the left card's profile picture -->
+            <div class="post-body">
+                <h2>Lorem ipsum Developer</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, sapien vel bibendum aliquam, elit sapien bibendum ipsum, euismod bibendum sapien elit vel ipsum. Sed euismod, sapien vel bibendum aliquam, elit sapien bibendum ipsum, euismod bibendum sapien elit vel ipsum.</p>
+            </div>
+            <div class="card-footer" id="edit">
+                <a href="#">Edit Profile</a>
+            </div>
+        </div>
+        <div class="post-card bigger-card">
+            <div class="post-pfp"></div>
+            <div class="post-body">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, sapien vel bibendum aliquam, elit sapien bibendum ipsum, euismod bibendum sapien elit vel ipsum. Sed euismod, sapien vel bibendum aliquam, elit sapien bibendum ipsum, euismod bibendum sapien elit vel ipsum.</p>
+            </div>
+            <div class="card-footer">
+                <h3>Recent Posts</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@12..96&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #111;
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-left {
+    display: flex; /* Add display flex to align items horizontally */
+    align-items: center;
+}
+
+.navbar-left img {
+    height: 40px; /* Adjust the height for your logo */
+    margin-right: 10px; /* Add margin to create space between the logo and text */
+}
+
+.navbar-left a {
+    color: #111;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.navbar-right a {
+    color: #111;
+    text-decoration: none;
+    margin-left: 2em;
+}
+
+h1 {
+    text-align: center;
+    font-size: 48px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.post-card {
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.smaller-card {
+    flex: 1;
+}
+
+.bigger-card {
+    flex: 2;
+    min-height: 400px;
+}
+
+.left-pfp { /* Add styles for the left card's profile picture */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: gray;
+    margin-top: 20px;
+}
+
+.post-pfp {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: gray;
+    margin-top: 20px;
+}
+
+.post-body {
+    margin-top: 20px;
+}
+
+.card-footer {
+    text-align: center;
+}
+
+#edit {
+    background-color: #000;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+#edit a {
+    color: #fff;
+    text-decoration: none;
+}
+</style>

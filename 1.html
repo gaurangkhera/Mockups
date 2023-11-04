@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website#1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oxanium&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+    *{
+        font-family: 'Oxanium' !important;
+        color: white !important;
+    }
+    body{
+        background-image: url('./bg_1.png');
+        background-size: cover;
+        background-blend-mode: overlay;
+    }
+</style>
+<body class="text-white">
+    <header class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full text-sm py-3 sm:py-0 :bg-slate-900">
+        <nav class="relative max-w-7xl w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8" aria-label="Global">
+          <div class="flex items-center justify-between">
+            <a class="flex flex-row gap-1.5 text-xl font-semibold :text-white mt-4" href="#" aria-label="Brand"><img src="./1_nav_2.png" alt="" srcset=""><img src="./1_nav.png" alt="" srcset=""></a>
+            <div class="sm:hidden">
+              <button type="button" class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm :bg-slate-900 :hover:bg-slate-800 :border-gray-700 :text-gray-400 :hover:text-white :focus:ring-offset-gray-800" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
+                <svg class="hs-collapse-open:hidden w-4 h-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+                <svg class="hs-collapse-open:block hidden w-4 h-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div id="navbar-collapse-with-animation" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
+            <div class="flex flex-col gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-7 sm:mt-0 sm:pl-7">
+              <a class="font-semibold text-gray-500 hover:text-gray-400 sm:py-6 :text-gray-400 :hover:text-gray-500" href="#" aria-current="page">HOME</a>
+              <a class="font-semibold text-gray-500 hover:text-gray-400 sm:py-6 :text-gray-400 :hover:text-gray-500" href="#">ABOUT</a>
+              <a class="font-semibold text-gray-500 hover:text-gray-400 sm:py-6 :text-gray-400 :hover:text-gray-500" href="#">LOGIN</a>
+              <a class="font-semibold text-gray-500 hover:text-gray-400 sm:py-6 :text-gray-400 :hover:text-gray-500" href="#">REGISTER</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="grid grid-cols-2">
+        <div class=" p-4">
+            <!-- Hero content -->
+            <div class="max-w-[85rem] mx-auto pt-24 pb-10">
+                <div class="mt-5 max-w-2xl text-center mx-auto">
+                    <h1 class="block font-bold text-gray-800 text-4xl md:text-5xl lg:text-6xl text-gray-200">
+                        LEVEL
+                        <span class="bg-clip-text bg-gradient-to-tl from-blue-600 to-violet-600 text-transparent">1</span>
+                    </h1>
+                </div>
+                <div class="mt-5 max-w-3xl text-center mx-auto">
+                    <p class="text-lg text-gray-600 text-gray-400">Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing. Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing.</p>
+                </div>
+                <img src="1_img.png" class="mt-8" alt="">
+                <input type="text" class="py-3 px-4 block w-1/4 border border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 bg-transparent dark:border-gray-700 dark:text-gray-400 mt-8" placeholder="Input"><br />
+                <button type="button" class="text-gray-100 px-4 p̀y-2 rounded transparent border border-gray-200">Submit</button>
+            </div>
+        </div>
+        <!-- Message bubble section on the right -->
+        <div class="p-4 my-auto">
+            <div class="message-container flex flex-col bg-transparent border border-gray-200 rounded-lg shadow-lg text-gray-300 p-10">
+                <div class="message-bubble align-left rounded-lg bg-transparent border border-gray-100 p-10 mb-2 max-w-xs">Lorem Ipsum is that it has a more-or-less normal</div>
+                <div class="message-bubble align-right bg-red-500 rounded-lg p-10 mb-2 max-w-xs self-end">Lorem Ipsum is that it has a more-or-less normal</div>
+                <!-- Add more message bubbles as needed -->
+            </div>
+            <div class="    ut-field mt-4 flex items-center">
+                <input type="text" class="py-3 px-4 w-full border border-gray-200 rounded-md text-gray-800 focus:border-blue-500 focus:ring-blue-500 bg-transparent" placeholder="Ask for help">
+            </div>
+        </div>
+      </div>
+</div>
+</body>
+</html>
